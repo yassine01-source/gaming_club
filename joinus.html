@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Gaming Club</title>
+</head>
+<body>
+    <header>
+        <h1>Gaming Club (Since 2021)</h1>
+        <figure>
+            <img src="img/gaming club.jfif" alt="our gaming club" height="400">
+        </figure>
+        <figcaption>
+            our humbel club
+        </figcaption>
+    </header>
+    <nav id="sommaire">
+        <ul>
+            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="index.html#why-us">Why Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="joinus.html">Join Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="traitement.php" method="post"> 
+            <fieldset>
+                <legend>personal information</legend>
+                    <p>
+                        <label for="nom">family name :</label>
+                        <input type="text" id="nom" name="nom" minlength="2" required>
+                    </p>
+                    <p>
+                        <label for="prenom">name :</label>
+                        <input type="text" id="prenom" name="prenom" minlength="2" required>
+                    </p>
+                    <p>
+                        <label for="email">e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.tn" required>
+                    </p>
+                    <p>
+                        <label for="telephone">phone number :</label>
+                        <input type="tel" id="telephone" name="telephone" pattern="\+216[0-9]{8}" title="+216 suivi de 8 chiffres" placeholder="+21622550211" required>
+                    </p>
+            </fieldset>
+            <p>
+                <button type="submit">be one of us</button>
+                <button type="reset">clear all</button>
+            </p>
+        </form> 
+    </main>
+    <footer>
+        <p>&copy; 2026 Gaming Club. All rights reserved.</p>
+    </footer>
+    <a href="#sommaire"><img src="img/button.png" alt="bouton" style="position: fixed;right: 0; top: 90%; width: 80px;"></a>
+</body>
+</html>
