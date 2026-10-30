@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💻 Game Dev & AI Workshop - Gaming Club</title>
+</head>
+<body>
+    <header>
+        <h1>Game Dev & AI Workshop 2026</h1>
+    </header>
+
+    <main>
+        <section id="event-info">
+            <h2>About the Workshop</h2>
+            <p>Learn how to design intelligent, adaptive Non-Player Characters (NPCs) using modern AI frameworks within Unity and Unreal Engine. This hands-on session covers pathfinding, behavioral trees, and smart decision-making algorithms for video games.</p>
+            
+            <h3>Schedule & Requirements</h3>
+            <ul>
+                <li><strong>Date:</strong> November 22, 2026</li>
+                <li><strong>Time:</strong> 10:00 AM - 16:00 PM</li>
+                <li><strong>Location:</strong> Lab Info Room</li>
+                <li><strong>Prerequisites:</strong> Basic programming knowledge (C# or C++) is recommended, but open to all enthusiastic beginners!</li>
+            </ul>
+        </section>
+
+        <section id="event-join">
+            <h2>Register for this Workshop</h2>
+            <form action="../traitement.php" method="post">
+                <input type="hidden" name="event_name" value="Game Dev & AI Workshop 2026">
+                
+                <p>
+                    <label for="nom">Family Name:</label>
+                    <input type="text" id="nom" name="nom" minlength="2" required>
+                </p>
+                <p>
+                    <label for="prenom">First Name:</label>
+                    <input type="text" id="prenom" name="prenom" minlength="2" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.tn" required>
+                </p>
+                <p>
+                    <label for="telephone">Phone Number:</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="\+216[0-9]{8}" title="+216 followed by 8 digits" placeholder="+21622550211" required>
+                </p>
+                <p>
+                    <label for="engine">Preferred Game Engine:</label>
+                    <select id="engine" name="engine">
+                        <option value="unity">Unity</option>
+                        <option value="unreal">Unreal Engine</option>
+                        <option value="beginner">Both / Total Beginner</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <button type="submit">Confirm Workshop Spot</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <p><a href="../events.html">← Back to All Events</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gaming Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
