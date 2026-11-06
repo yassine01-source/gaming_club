@@ -257,7 +257,7 @@ footer {
     transform: translateY(-2px); 
 }
 /* --- NAVIGATION  --- */
-nav#sommaire {
+nav{
     background: #1f2833;
     padding: 15px;
     border-radius: 8px;
