@@ -46,8 +46,8 @@ figcaption {
     margin-top: 10px;
 }
 
-/* --- NAVIGATION (SOMMAIRE) --- */
-nav#sommaire {
+/* --- NAVIGATION  --- */
+nav {
     background: #1f2833;
     padding: 15px;
     border-radius: 8px;
@@ -55,7 +55,7 @@ nav#sommaire {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav#sommaire ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -63,14 +63,14 @@ nav#sommaire ul {
     gap: 20px;
 }
 
-nav#sommaire a {
+nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-nav#sommaire a:hover {
+nav a:hover {
     color: #66fcf1;
 }
 
@@ -270,4 +270,33 @@ nav{
 }
 html {
     scroll-behavior: smooth;
+}
+/* --- RESPONSIVE LAYOUT FOR MOBILE LANDSCAPE MODE --- */
+
+/* Targets screens when flipped horizontally (landscape) */
+@media screen and (max-orientation: landscape) and (max-height: 500px) {
+    /* Reduce header image size in landscape so it doesn't cover the screen */
+    header img {
+        max-height: 180px;
+        width: auto;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    /* Reduce vertical padding of navigation to preserve screen space */
+    nav {
+        padding: 8px 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    /* Adjust the floating back-to-top button position for short screens */
+    a[href="#top"] img {
+        width: 50px !important;
+        top: 80% !important;
+    }
 }
