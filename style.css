@@ -268,3 +268,6 @@ nav#sommaire {
     top: 0px;          
     z-index: 1000;      
 }
+html {
+    scroll-behavior: smooth;
+}
